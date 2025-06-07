@@ -81,6 +81,18 @@
     .title, .subtitle {
       color: var(--text) !important;
     }
+      .navbar-menu.is-active {
+    /* keep everything in one row and allow scrolling if needed */
+    display:        flex !important;
+    flex-wrap:      nowrap !important;
+    overflow-x:     auto !important;
+    justify-content: space-between;
+  }
+
+  /* make sure no link or icon ever shrinks to hide behind the edge */
+  .navbar-menu.is-active .navbar-item {
+    flex-shrink: 0 !important;
+  }
   </style>
 </head>
 <body>
