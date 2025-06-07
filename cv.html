@@ -1,9 +1,10 @@
+<!-- cv.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Adam D Hines | Home</title>
+  <title>Adam D Hines | CV</title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -16,18 +17,14 @@
   <style>
     :root {
       --bg:        #121212;
-      --surface:   #1f1f1f;          /* solid dark background */
+      --surface:   #1f1f1f;
       --text:      #e0e0e0;
       --hover-bg:  rgba(255,255,255,0.1);
     }
-
-    /* Page background/text */
     html, body {
       background-color: var(--bg) !important;
       color:            var(--text) !important;
     }
-
-    /* NAVBAR */
     .navbar {
       background-color: var(--surface) !important;
       padding:          0.75rem 1.5rem;
@@ -42,7 +39,7 @@
       align-items:     center;
       justify-content: space-between;
       width:           100%;
-      background-color: transparent !important; /* let the parent .navbar show */
+      background-color: transparent !important;
     }
     .navbar-start,
     .navbar-end {
@@ -50,9 +47,7 @@
       flex-direction: row !important;
       align-items:    center;
     }
-    .navbar-brand .navbar-item,
-    .navbar-start .navbar-item,
-    .navbar-end   .navbar-item {
+    .navbar-item {
       background:    transparent !important;
       color:         var(--text) !important;
       font-family:   'Google Sans', sans-serif;
@@ -67,14 +62,8 @@
     .navbar-item:hover {
       background-color: var(--hover-bg) !important;
     }
-
-    /* HERO */
-    #home {
-      display:         flex;
-      align-items:     center;
-      justify-content: center;
-      min-height:      100vh;
-      text-align:      center;
+    section {
+      padding: 4rem 1.5rem;
     }
     .title, .subtitle {
       color: var(--text) !important;
@@ -83,52 +72,45 @@
 </head>
 <body>
   <!-- NAVBAR -->
-  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-fixed-top" role="navigation">
     <div class="container">
-      <!-- Brand -->
       <div class="navbar-brand">
         <a class="navbar-item" href="index.html">Adam D Hines</a>
       </div>
-      <!-- Always-visible menu -->
       <div class="navbar-menu is-active">
         <div class="navbar-start">
           <a class="navbar-item" href="index.html">Home</a>
           <a class="navbar-item" href="about.html">About</a>
           <a class="navbar-item" href="papers.html">Papers</a>
-          <a class="navbar-item" href="cv.html">CV</a>
+          <a class="navbar-item is-active" href="cv.html">CV</a>
         </div>
         <div class="navbar-end">
-          <a class="navbar-item" href="https://linkedin.com/in/adamdhines" target="_blank">
-            <span class="icon"><i class="fab fa-linkedin"></i></span>
-          </a>
-          <a class="navbar-item" href="https://github.com/AdamDHines" target="_blank">
-            <span class="icon"><i class="fab fa-github"></i></span>
-          </a>
-          <a class="navbar-item" href="https://scholar.google.com/citations?user=rH2jg5UAAAAJ&hl=en" target="_blank">
+          <a class="navbar-item" href="https://linkedin.com/in/adamdhines" target="_blank"><span class="icon"><i class="fab fa-linkedin"></i></span></a>
+          <a class="navbar-item" href="https://github.com/adamdhines"     target="_blank"><span class="icon"><i class="fab fa-github"></i></span></a>
+                   <a class="navbar-item" href="https://scholar.google.com/citations?user=rH2jg5UAAAAJ&hl=en" target="_blank">
             <span class="icon"><i class="ai ai-google-scholar"></i></span>
           </a>
           <a class="navbar-item" href="https://orcid.org/0000-0002-0259-3642" target="_blank">
             <span class="icon"><i class="ai ai-orcid"></i></span>
           </a>
-        </div>
       </div>
     </div>
   </nav>
 
-  <!-- HOME HERO -->
-  <section id="home" class="hero is-fullheight-with-navbar">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title is-1" style="font-family:'Google Sans',sans-serif;">Hello, I’m Adam</h1>
-        <h2 class="subtitle is-3" style="font-family:'Noto Sans',sans-serif;">Robotics Researcher &amp; Developer</h2>
-      </div>
+  <!-- CV SECTION -->
+  <section id="cv" class="section">
+    <div class="container">
+      <h1 class="title is-2">Curriculum Vitae</h1>
+      <a class="button is-link" href="./static/Adam_D_Hines_CV.pdf" target="_blank">
+        Download CV (PDF)
+      </a>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
     <div class="content has-text-centered">
-      <p><strong>Adam D Hines</strong> — Robotics &amp; Neuromorphic Enthusiast</p>
+      <p><strong>Adam D Hines</strong></p>
     </div>
   </footer>
 </body>
