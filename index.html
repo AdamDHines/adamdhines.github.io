@@ -23,49 +23,63 @@
 
     /* Page background/text */
     html, body {
+      margin: 0;
       background-color: var(--bg) !important;
       color:            var(--text) !important;
     }
 
-    /* NAVBAR */
+    /* NAVBAR BASE */
     .navbar {
       background-color: var(--surface) !important;
-      padding:          0.75rem 1.5rem;
+      /* 1) remove side padding */
+      padding: 0.75rem 0 !important;
     }
-    /* ← CHANGED: remove the max-width cap so it always spans the viewport */
     .navbar .container {
+      padding: 0 !important;
       max-width: none !important;
-      width:     100% !important;
-      padding:   0; /* keep your side padding on .navbar itself */
+      width: 100% !important;
     }
+
+    /* horizontal flex, no wrap */
     .navbar-menu.is-active {
       display:         flex !important;
-      flex-direction:  row   !important;
+      flex-wrap:       nowrap !important;
       align-items:     center;
       justify-content: space-between;
       width:           100%;
-      background-color: transparent !important;
     }
+
+    /* groups as rows */
+    .navbar-brand,
     .navbar-start,
     .navbar-end {
-      display:        flex !important;
-      flex-direction: row !important;
-      align-items:    center;
+      display:      flex !important;
+      align-items:  center;
     }
-    .navbar-brand .navbar-item,
+
+    /* 2) shrink padding & font-size on items */
+    .navbar-brand .navbar-item {
+      padding:    0.2rem 0.6rem !important;
+      font-size:  1rem !important;
+    }
     .navbar-start .navbar-item,
     .navbar-end   .navbar-item {
-      background:    transparent !important;
-      color:         var(--text) !important;
-      font-family:   'Google Sans', sans-serif;
-      font-weight:   700;
-      padding:       0.5rem 1rem;
-      white-space:   nowrap;
+      padding:    0.2rem 0.4rem !important;
+      font-size:  0.9rem !important;
+      margin-left:  0.2rem !important;
+      margin-right: 0.2rem !important;
     }
-    .navbar-start .navbar-item + .navbar-item,
-    .navbar-end   .navbar-item + .navbar-item {
-      margin-left: 1rem;
+
+    /* allow items to shrink */
+    .navbar-menu.is-active .navbar-item {
+      flex-shrink: 1 !important;
+      background:  transparent !important;
+      color:       var(--text) !important;
+      font-family: 'Google Sans', sans-serif;
+      font-weight: 700;
+      white-space: nowrap;
     }
+
     .navbar-item:hover {
       background-color: var(--hover-bg) !important;
     }
@@ -75,24 +89,13 @@
       display:         flex;
       align-items:     center;
       justify-content: center;
-      min-height:      100vh;
+      min-height:      calc(100vh - 0); /* full height under navbar */
       text-align:      center;
+      padding-top:     3.5rem;
     }
     .title, .subtitle {
       color: var(--text) !important;
     }
-      .navbar-menu.is-active {
-    /* keep everything in one row and allow scrolling if needed */
-    display:        flex !important;
-    flex-wrap:      nowrap !important;
-    overflow-x:     auto !important;
-    justify-content: space-between;
-  }
-
-  /* make sure no link or icon ever shrinks to hide behind the edge */
-  .navbar-menu.is-active .navbar-item {
-    flex-shrink: 0 !important;
-  }
   </style>
 </head>
 <body>
@@ -103,7 +106,7 @@
       <div class="navbar-brand">
         <a class="navbar-item" href="index.html">Adam D Hines</a>
       </div>
-      <!-- Always-visible menu -->
+      <!-- Menu -->
       <div class="navbar-menu is-active">
         <div class="navbar-start">
           <a class="navbar-item" href="index.html">Home</a>
