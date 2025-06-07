@@ -16,7 +16,7 @@
   <style>
     :root {
       --bg:        #121212;
-      --surface:   #1f1f1f;          /* solid dark background */
+      --surface:   #1f1f1f;
       --text:      #e0e0e0;
       --hover-bg:  rgba(255,255,255,0.1);
     }
@@ -30,19 +30,22 @@
     /* NAVBAR */
     .navbar {
       background-color: var(--surface) !important;
-      padding:          0.75rem 1.5rem;
+      padding:          0.75rem 0;
     }
+    /* <<< CHANGE HERE: make the container full-width >>> */
     .navbar .container {
-      max-width: 1200px;
-      width:     100%;
+      max-width: none !important;
+      width:     100% !important;
+      padding:   0 1.5rem;              /* preserve your side padding */
     }
+
     .navbar-menu.is-active {
       display:         flex !important;
       flex-direction:  row   !important;
       align-items:     center;
       justify-content: space-between;
       width:           100%;
-      background-color: transparent !important; /* let the parent .navbar show */
+      background-color: transparent !important;
     }
     .navbar-start,
     .navbar-end {
@@ -50,9 +53,7 @@
       flex-direction: row !important;
       align-items:    center;
     }
-    .navbar-brand .navbar-item,
-    .navbar-start .navbar-item,
-    .navbar-end   .navbar-item {
+    .navbar-item {
       background:    transparent !important;
       color:         var(--text) !important;
       font-family:   'Google Sans', sans-serif;
@@ -101,13 +102,13 @@
           <a class="navbar-item" href="https://linkedin.com/in/adamdhines" target="_blank">
             <span class="icon"><i class="fab fa-linkedin"></i></span>
           </a>
-          <a class="navbar-item" href="https://github.com/AdamDHines" target="_blank">
+          <a class="navbar-item" href="https://github.com/adamdhines" target="_blank">
             <span class="icon"><i class="fab fa-github"></i></span>
           </a>
-          <a class="navbar-item" href="https://scholar.google.com/citations?user=rH2jg5UAAAAJ&hl=en" target="_blank">
+          <a class="navbar-item" href="https://scholar.google.com/citations?user=YOUR_ID_HERE" target="_blank">
             <span class="icon"><i class="ai ai-google-scholar"></i></span>
           </a>
-          <a class="navbar-item" href="https://orcid.org/0000-0002-0259-3642" target="_blank">
+          <a class="navbar-item" href="https://orcid.org/0000-0002-XXXX-XXXX" target="_blank">
             <span class="icon"><i class="ai ai-orcid"></i></span>
           </a>
         </div>
