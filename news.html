@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>News | Adam D Hines</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!-- Font Awesome & Academicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+  <style>
+    :root {
+      --bg: #121212;
+      --surface: #1f1f1f;
+      --text: #e0e0e0;
+      --hover-bg: rgba(255,255,255,0.08);
+      --nav-height: 60px;
+    }
+
+    *,*::before,*::after{box-sizing:border-box;}
+    html,body{margin:0;background:var(--bg);color:var(--text);}
+
+    a { color: #3273dc; text-decoration: none; }
+
+    .topbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      height: var(--nav-height);
+      background: var(--surface);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem 0.75rem;
+      padding: 0.3rem 0.75rem;
+    }
+    .topbar .brand {
+      font-family: 'Google Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      white-space: nowrap;
+      flex: 0 0 auto;
+    }
+    .topbar .nav-link {
+      font-family: 'Google Sans', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 0.2rem 0.45rem;
+      border-radius: 4px;
+      transition: background 0.15s ease;
+    }
+    .topbar .nav-link:hover { background: var(--hover-bg); }
+    .topbar .icon-link { padding: 0.2rem 0.4rem; }
+    .topbar .icon-link i { font-size: 1.05rem; }
+
+    .section { padding-top: calc(var(--nav-height) + 2rem); }
+
+    .news-year {
+      font-family: 'Google Sans', sans-serif;
+      font-size: 1.5rem;
+      margin-top: 3rem;
+      border-bottom: 1px solid #333;
+      padding-bottom: 0.5rem;
+    }
+
+    .news-entry {
+      margin: 1rem 0;
+      font-family: 'Noto Sans', sans-serif;
+    }
+
+    .news-entry .date {
+      font-weight: bold;
+      margin-right: 0.5rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      .topbar { justify-content: flex-start; gap: 0.25rem 0.5rem; }
+      .topbar .nav-link { font-size: 0.78rem; }
+    }
+    .news-year {
+    font-family: 'Google Sans', sans-serif;
+    font-size: 1.3rem;
+    margin-top: 2rem;         /* ↓ was 3rem */
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.3rem;   /* ↓ slightly less */
+    }
+
+    .news-month {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 1rem;         /* ↓ was 1.5rem */
+    margin-bottom: 0.2rem;    /* ↓ was 0.25rem */
+    padding-left: 0.5rem;
+    color: #ccc;
+    font-family: 'Google Sans', sans-serif;
+    }
+
+    ul {
+    margin: 0 0 0.75rem 1.2rem; /* ↓ bottom spacing and indent */
+    padding-left: 1rem;
+    list-style-type: disc;
+    }
+
+    .news-entry {
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 0.25rem;  /* ↓ was 0.4rem */
+    line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="topbar">
+    <a class="brand" href="index.html">About</a>
+    <a class="nav-link" href="papers.html">Papers</a>
+    <a class="nav-link" href="cv.html">CV</a>
+    <a class="nav-link" href="news.html">News</a>
+    <a class="icon-link" href="https://linkedin.com/in/adamdhines" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a class="icon-link" href="https://github.com/adamdhines" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a class="icon-link" href="https://scholar.google.com/citations?user=rH2jg5UAAAAJ&hl=en" target="_blank" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+    <a class="icon-link" href="https://orcid.org/0000-0002-0259-3642" target="_blank" aria-label="ORCiD"><i class="ai ai-orcid"></i></a>
+  </nav>
+
+  <!-- NEWS SECTION -->
+  <section class="section">
+    <div class="container">
+        <h1 class="title is-2" style="font-family:'Google Sans',sans-serif;">News</h1>
+
+        <!-- Repeat for each year -->
+        <div class="news-year">2025</div>
+
+            <div class="news-month">May</div>
+            <ul>
+            <li class="news-entry">Visited Townsville and Charters Towers through the Flying Scientist program for the World Science Festival</li>
+            </ul>
+
+            <div class="news-month">April</div>
+            <ul>
+            <li class="news-entry">Got married!</li>
+            <li class="news-entry">Attended the transitions team retreat in Kioloa, NSW with Macquarie, ANU, & Cambridge</li>
+            </ul>
+
+            <div class="news-month">March</div>
+            <ul>
+            <li class="news-entry">Robin's work was accepted to the IEEE Neuro Inspired Computational Elements conference, co-supervised by Tobias Fischer</li>
+            </ul>
+
+            <div class="news-month">February</div>
+            <ul>
+            <li class="news-entry">Presented at the QUT The Future of Neuromorphic and Bio-Inspired Computation event</li>
+            </ul>
+
+            <div class="news-month">January</div>
+            <ul>
+            <li class="news-entry">Started as co-chair of the EMCR Brain Sciences Network for a one year term</li>
+            </ul>
+
+        <div class="news-year">2024</div>
+
+            <div class="news-month">September</div>
+            <ul>
+            <li class="news-entry">Visited Roma State College for a Flying Scientist event</li>
+            <li class="news-entry">Joined Macquarie University as a postdoctoral research fellow</li>
+            </ul>
+
+            <div class="news-month">August</div>
+            <ul>
+            <li class="news-entry">Visited Macquarie University to meet and attend a special lecture from Prof. Barbara Webb</li>
+            <li class="news-entry">Submitted our LENS neuromorphic localization system preprint</li>
+            </ul>
+
+            <div class="news-month">May</div>
+            <ul>
+            <li class="news-entry">Gave an interview for the ABC on our anaesthetic mechanisms paper</li>
+            <li class="news-entry">A piece I wrote for The Conversation on our anaesthesia paper was published</li>
+            <li class="news-entry">Served as an organiser for the 2024 IEEE ICRA Debates in Robotics workshop</li>
+            <li class="news-entry">Attended and presented VPRTempo at the 2024 IEEE International Conference on Robotics and Automation in Yokohama, Japan</li>
+            <li class="news-entry">Our general anaesthetic mechanism paper was accepted and published in The Journal of Neuroscience</li>
+            <li class="news-entry">Poster presentation accepted to the 2024 IEEE ICRA workshop on "Bio-inspired robotics and robotics for biology"</li>
+            </ul>
+
+            <div class="news-month">February</div>
+            <ul>
+            <li class="news-entry">Provided an expert insight to New Scientist on an article about AI and the mouse brain</li>
+            </ul>
+
+            <div class="news-month">January</div>
+            <ul>
+            <li class="news-entry">Our VPRTempo paper was accepted to the 2024 IEEE International Conference on Robotics and Automation</li>
+            <li class="news-entry">Joined the EMCR Brain Sciences Network as a steering committee member</li>
+            </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p><strong>Adam D Hines</strong> — Neuroscientist turned roboticist</p>
+    </div>
+  </footer>
+</body>
+</html>

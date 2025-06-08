@@ -1,35 +1,302 @@
-<!-- papers.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Adam D Hines | Papers</title>
-  <!-- include same links & <style> as above -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Papers | Adam D Hines</title>
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Bulma CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!-- Font Awesome & Academicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <style>/* copy <style> from index.html */:root{--bg:#121212;--surface:#1f1f1f;--text:#e0e0e0;--hover-bg:rgba(255,255,255,0.1)}html,body{background:var(--bg)!important;color:var(--text)!important}.navbar{background:var(--surface)!important;padding:.75rem 1.5rem}.navbar .container{max-width:1200px;width:100%}.navbar-menu.is-active{display:flex!important;flex-direction:row!important;align-items:center;justify-content:space-between;width:100%;background:transparent!important}.navbar-start,.navbar-end{display:flex!important;flex-direction:row!important;align-items:center}.navbar-item{background:transparent!important;color:var(--text)!important;font-family:'Google Sans';font-weight:700;padding:.5rem 1rem;white-space:nowrap}.navbar-start .navbar-item+.navbar-item,.navbar-end .navbar-item+.navbar-item{margin-left:1rem}.navbar-item:hover{background:var(--hover-bg)!important}section{padding:4rem 1.5rem}.title,.subtitle{color:var(--text)!important}</style>
+
+  <style>
+    :root {
+      --bg: #121212;
+      --surface: #1f1f1f;
+      --text: #e0e0e0;
+      --hover-bg: rgba(255,255,255,0.08);
+      --nav-height: 60px;
+    }
+
+    *,*::before,*::after{box-sizing:border-box;}
+    html,body{margin:0;background:var(--bg);color:var(--text);}
+
+    a{color:inherit;text-decoration:none;}
+    .topbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      height: var(--nav-height);
+      background: var(--surface);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem 0.75rem;
+      padding: 0.3rem 0.75rem;
+    }
+    .topbar .brand {
+      font-family: 'Google Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      white-space: nowrap;
+      flex: 0 0 auto;
+    }
+    .topbar .nav-link {
+      font-family: 'Google Sans', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 0.2rem 0.45rem;
+      border-radius: 4px;
+      transition: background 0.15s ease;
+    }
+    .topbar .nav-link:hover { background: var(--hover-bg); }
+    .topbar .icon-link { padding: 0.2rem 0.4rem; }
+    .topbar .icon-link i { font-size: 1.05rem; }
+
+    .section { padding-top: calc(var(--nav-height) + 2rem); }
+
+    .card {
+      background-color: var(--surface);
+      color: var(--text);
+      border-radius: 8px;
+    }
+    .card .media-left img {
+      max-width: 100px;
+      object-fit: cover;
+    }
+    .resource-links a {
+      margin-right: 0.75rem;
+      color: #3273dc;
+      font-weight: bold;
+    }
+    .title, .subtitle {
+      color: var(--text);
+    }
+
+    @media(max-width: 600px){
+      .topbar { justify-content: flex-start; gap: 0.25rem 0.5rem; }
+      .topbar .nav-link { font-size: 0.78rem; }
+    }
+    .media-left figure {
+                      width: 192px;
+                      height: 192px;
+                    }
+
+    .media-left figure img {
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                    }
+
+                    a {
+  color: #3273dc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+  </style>
 </head>
 <body>
-  <nav class="navbar is-fixed-top" role="navigation">
+  <!-- NAVBAR -->
+  <nav class="topbar">
+    <a class="brand" href="index.html">About</a>
+    <a class="nav-link" href="papers.html">Papers</a>
+    <a class="nav-link" href="cv.html">CV</a>
+    <a class="nav-link" href="news.html">News</a>
+    <a class="icon-link" href="https://linkedin.com/in/adamdhines" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a class="icon-link" href="https://github.com/adamdhines" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a class="icon-link" href="https://scholar.google.com/citations?user=rH2jg5UAAAAJ&hl=en" target="_blank" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+    <a class="icon-link" href="https://orcid.org/0000-0002-0259-3642" target="_blank" aria-label="ORCiD"><i class="ai ai-orcid"></i></a>
+  </nav>
+
+  <!-- PAPERS SECTION -->
+  <section class="section">
     <div class="container">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="index.html">Adam D Hines</a>
-      </div>
-      <div class="navbar-menu is-active">
-        <div class="navbar-start">
-          <a class="navbar-item" href="index.html">Home</a>
-          <a class="navbar-item" href="about.html">About</a>
-          <a class="navbar-item is-active" href="papers.html">Papers</a>
-          <a class="navbar-item" href="cv.html">CV</a>
+      <h1 class="title is-2" style="font-family:'Google Sans',sans-serif;">Papers</h1>
+      
+      <!-- PAPER CARD -->
+      <div class="box card mb-5" style="padding: 1rem;">
+        <div class="card-content" style="padding: 0;">
+          <div class="columns is-vcentered is-mobile">
+            <!-- Thumbnail -->
+            <div class="column is-narrow">
+              <figure class="image" style="max-width: 160px;">
+                <img src="./static/images/lens.png" alt="Paper Thumbnail" style="width: 100%; height: auto; border-radius: 6px;">
+              </figure>
+            </div>
+
+            <!-- Paper content -->
+            <div class="column">
+              <p class="title is-5" style="margin-bottom: 2.2rem; font-family:'Noto Sans',sans-serif;">A compact neuromorphic system for ultra-energy-efficient, on-device robot localization</p>
+             <p class="subtitle is-6" style="margin-bottom: 0.5rem;"><b>Adam D. Hines*</b>, Michael Milford, Tobias Fischer</p>
+              <p class="subtitle is-6" style="margin-bottom: 0.5rem;">2025 · arXiv</p>
+              <p class="resource-links" style="font-size: 0.9rem;">
+                <a href="./static/papers/LENS.pdf" target="_blank">PDF</a>
+                <a href="https://github.com/AdamDHines/LENS" target="_blank">Code</a>
+                <a href="https://doi.org/10.48550/arXiv.2408.16754" target="_blank">DOI</a>
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="navbar-end">
-          <a class="navbar-item" href="https://linkedin.com/in/adamdhines" target="_blank"><span class="icon"><i class="fab fa-linkedin"></i></span></a>
-          <a class="navbar-item" href="https://github.com/adamdhines"     target="_blank"><span class="icon"><i class="fab fa-github"></i></span></a>
-                   <a class="navbar-item" href="https://scholar.google.com/citations?user=rH2jg5UAAAAJ&hl=en" target="_blank">
-            <span class="icon"><i class="ai ai-google-scholar"></i></span>
-          </a>
-          <a class="navbar-item" href="https://orcid.org/0000-0002-0259-3642" target="_blank">
-            <span class="icon"><i class="ai ai-orcid"></i></span>
-          </a>
+      </div>
+
+      <div class="box card mb-5" style="padding: 1rem;">
+        <div class="card-content" style="padding: 0;">
+          <div class="columns is-vcentered is-mobile">
+            <!-- Thumbnail -->
+            <div class="column is-narrow">
+              <figure class="image" style="max-width: 160px;">
+                <img src="./static/images/thresh.png" alt="Paper Thumbnail" style="width: 100%; height: auto; border-radius: 6px;">
+              </figure>
+            </div>
+
+            <!-- Paper content -->
+            <div class="column">
+              <p class="title is-5" style="margin-bottom: 2.2rem; font-family:'Noto Sans',sans-serif;">Threshold Adaptation in Spiking Networks Enables Shortest Path Finding and Place Disambiguation</p>
+              <p class="subtitle is-6" style="margin-bottom: 0.5rem;">Robin Dietrich*, Tobias Fischer, Nicolai Waniek, Nico Reeb, Michael Milford, Alois Knoll, <b>Adam D. Hines</b></p>
+              <p class="subtitle is-6" style="margin-bottom: 0.5rem;">2025 · IEEE Neuro Inspired Computational Elements</p>
+              <p class="resource-links" style="font-size: 0.9rem;">
+                <a href="./static/papers/thresh.pdf" target="_blank">PDF</a>
+                <a href="https://github.com/dietriro/neuroseq" target="_blank">Code</a>
+                <a href="https://doi.org/10.48550/arXiv.2503.21795" target="_blank">DOI</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box card mb-5" style="padding: 1rem;">
+        <div class="card-content" style="padding: 0;">
+          <div class="columns is-vcentered is-mobile">
+            <!-- Thumbnail -->
+            <div class="column is-narrow">
+              <figure class="image" style="max-width: 160px;">
+                <img src="./static/images/iso.png" alt="Paper Thumbnail" style="width: 100%; height: auto; border-radius: 6px;">
+              </figure>
+            </div>
+
+            <!-- Paper content -->
+            <div class="column">
+              <p class="title is-5" style="margin-bottom: 2.2rem; font-family:'Noto Sans',sans-serif;">Synapse-specific trapping of SNARE machinery proteins in the anesthetized Drosophila brain</p>
+              <p class="subtitle is-6" style="margin-bottom: 0.5rem;"><b>Adam D. Hines</b>, Amber B. Kewin, Matthew N. Van De Poll, Victor Anggono, Adekunle T. Bademosi, Bruno van Swinderen*</p>
+              <p class="subtitle is-6" style="margin-bottom: 0.5rem;">2024 · The Journal of Neuroscience</p>
+              <p class="resource-links" style="font-size: 0.9rem;">
+                <a href="./static/papers/jneuro.pdf" target="_blank">PDF</a>
+                <a href="https://github.com/AdamDHines/sptPALM-Analysis" target="_blank">Code</a>
+                <a href="https://doi.org/10.1523/JNEUROSCI.0588-23.2024" target="_blank">DOI</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box card mb-5" style="padding: 1rem;">
+        <div class="card-content" style="padding: 0;">
+          <div class="columns is-vcentered is-mobile">
+            <!-- Thumbnail -->
+            <div class="column is-narrow">
+              <figure class="image" style="max-width: 160px;">
+                <img src="./static/images/vprtempo.png" alt="Paper Thumbnail" style="width: 100%; height: auto; border-radius: 6px;">
+              </figure>
+            </div>
+
+            <!-- Paper content -->
+            <div class="column">
+              <p class="title is-5" style="margin-bottom: 2.2rem; font-family:'Noto Sans',sans-serif;">VPRTempo: A Fast Temporally Encoded Spiking Neural Network for Visual Place Recognition</p>
+              <p class="subtitle is-6" style="margin-bottom: 0.5rem;"><b>Adam D. Hines*</b>, Michael Milford, Tobias Fischer</p>
+              <p class="subtitle is-6" style="margin-bottom: 0.5rem;">2024 · IEEE International Conference on Robotics and Automation (ICRA)</p>
+              <p class="resource-links" style="font-size: 0.9rem;">
+                <a href="./static/papers/vprtempo.pdf" target="_blank">PDF</a>
+                <a href="https://github.com/QVPR/VPRTempo" target="_blank">Code</a>
+                <a href="https://doi.org/10.1109/ICRA57147.2024.10610918" target="_blank">DOI</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box card mb-5" style="padding: 1rem;">
+        <div class="card-content" style="padding: 0;">
+          <div class="columns is-vcentered is-mobile">
+            <!-- Thumbnail -->
+            <div class="column is-narrow">
+              <figure class="image" style="max-width: 160px;">
+                <img src="./static/images/eneuro.png" alt="Paper Thumbnail" style="width: 100%; height: auto; border-radius: 6px;">
+              </figure>
+            </div>
+
+            <!-- Paper content -->
+            <div class="column">
+              <p class="title is-5" style="margin-bottom: 2.2rem; font-family:'Noto Sans',sans-serif;">Tracking Single Molecule Dynamics in the Adult Drosophila Brain</p>
+              <p class="subtitle is-6" style="margin-bottom: 0.5rem;"><b>Adam D. Hines</b>, Bruno van Swinderen*</p>
+              <p class="subtitle is-6" style="margin-bottom: 0.5rem;">2021 · eNeuro</p>
+              <p class="resource-links" style="font-size: 0.9rem;">
+                <a href="./static/papers/eneuro.pdf" target="_blank">PDF</a>
+                <a href="https://github.com/AdamDHines/sptPALM-Analysis" target="_blank">Code</a>
+                <a href="https://doi.org/10.1523/ENEURO.0057-21.2021" target="_blank">DOI</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box card mb-5" style="padding: 1rem;">
+        <div class="card-content" style="padding: 0;">
+          <div class="columns is-vcentered is-mobile">
+            <!-- Thumbnail -->
+            <div class="column is-narrow">
+              <figure class="image" style="max-width: 160px;">
+                <img src="./static/images/cvr.png" alt="Paper Thumbnail" style="width: 100%; height: auto; border-radius: 6px;">
+              </figure>
+            </div>
+
+            <!-- Paper content -->
+            <div class="column">
+              <p class="title is-5" style="margin-bottom: 2.2rem; font-family:'Noto Sans',sans-serif;">Pharmacological activation of I<sub>Kr</sub> in models of long QT Type 2 risks overcorrection of repolarization</p>
+              <p class="subtitle is-6" style="margin-bottom: 0.5rem;">Matthew D Perry*, Chai-Ann Ng, Melissa M Mangala, Timothy Y M Ng, <b>Adam D Hines</b>, Whitney Liang, Michelle J O Xu, Adam P Hill, Jamie I Vandenberg</p>
+              <p class="subtitle is-6" style="margin-bottom: 0.5rem;">2020 · Cardiovascular Research</p>
+              <p class="resource-links" style="font-size: 0.9rem;">
+                <a href="https://doi.org/10.1093/cvr/cvz247" target="_blank">DOI</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box card mb-5" style="padding: 1rem;">
+        <div class="card-content" style="padding: 0;">
+          <div class="columns is-vcentered is-mobile">
+            <!-- Thumbnail -->
+            <!-- Paper content -->
+            <div class="column">
+              <p class="title is-5" style="margin-bottom: 2.2rem; font-family:'Noto Sans',sans-serif;">Turning to Drosophila for help in resolving general anesthesia</p>
+              <p class="subtitle is-6" style="margin-bottom: 0.5rem;">Bruno van Swinderen*, <b>Adam D Hines</b></p>
+              <p class="subtitle is-6" style="margin-bottom: 0.5rem;">2020 · Proceedings of the National Academy of Sciences</p>
+              <p class="resource-links" style="font-size: 0.9rem;">
+                <a href="https://doi.org/10.1073/pnas.2012131117" target="_blank">DOI</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ADDITIONAL PAPER CARDS BELOW -->
+      <!-- Simply duplicate the block above and replace contents -->
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p><strong>Adam D Hines</strong> — <strong>Neuroscientist turned roboticist</strong></p>
+    </div>
+  </footer>
+</body>
+</html>
