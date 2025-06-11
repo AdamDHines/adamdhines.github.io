@@ -9,15 +9,13 @@
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://adamdhines.github.io/">
-
-  <!-- Robots Meta Tag -->
   <meta name="robots" content="index, follow">
   <meta name="google-site-verification" content="4FxfVyL6UTuTgW_XYHHlLDI7P4y3i41wxtjFa8Fd5rs" />
   <title>CV | Adam D Hines</title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Bulma CSS (only used for hero/container conveniences) -->
+  <!-- Bulma CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <!-- Font Awesome & Academicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -32,118 +30,151 @@
       --nav-height:  60px;
     }
 
-    *,*::before,*::after{box-sizing:border-box;}
-    html,body{margin:0;background:var(--bg);color:var(--text);}
-    a{color:inherit;text-decoration:none;}
-
-    .topbar{
-      position:fixed;top:0;left:0;right:0;z-index:100;
-      height:var(--nav-height);
-      background:var(--surface);
-      display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
-      gap:0.35rem 0.75rem;
-      padding:0.3rem 0.75rem;
+    *, *::before, *::after {
+      box-sizing: border-box;
     }
 
-    .topbar .brand{
-      font-family:'Google Sans',sans-serif;font-weight:700;font-size:1rem;
-      padding:0.2rem 0.6rem;
-      white-space:nowrap;
-      flex:0 0 auto;
+    html, body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
     }
 
-    .topbar .nav-link{
-      font-family:'Google Sans',sans-serif;font-weight:700;font-size:0.9rem;
-      padding:0.2rem 0.45rem;
-      border-radius:4px;
-      transition:background 0.15s ease;
-      flex:0 0 auto;
-    }
-    .topbar .nav-link:hover{background:var(--hover-bg);}
-    .topbar .icon-link{padding:0.2rem 0.4rem;flex:0 0 auto;}
-    .topbar .icon-link i{font-size:1.05rem;}
-
-    @media(max-width:1023px){
-      .topbar .nav-link{font-size:0.8rem;padding:0.18rem 0.4rem;}
-      .topbar .icon-link i{font-size:1rem;}
-    }
-    @media(max-width:600px){
-      .topbar{gap:0.25rem 0.5rem;justify-content:flex-start;padding:0.4rem 0.5rem;}
-      .topbar .nav-link{font-size:0.78rem;}
-      .topbar .icon-link{padding:0.15rem 0.3rem;}
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 
-    #cv {
-      padding: 6rem 1.5rem 4rem; /* Extra top padding for fixed nav */
+    /*────────── NAVBAR ──────────*/
+    .topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      height: var(--nav-height);
+      background: var(--surface);
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      text-align: center;
+      gap: 0.35rem 0.75rem;
+      padding: 0.3rem 0.75rem;
     }
 
-    .title, .subtitle {
-      color: var(--text);
+    .topbar .brand {
       font-family: 'Google Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 0.2rem 0.6rem;
+      white-space: nowrap;
+      flex: 0 0 auto;
     }
 
-    .download-button {
-      margin-top: 1.5rem;
-      font-family: 'Noto Sans', sans-serif;
+    .topbar .nav-link {
+      font-family: 'Google Sans', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 0.2rem 0.45rem;
+      border-radius: 4px;
+      transition: background 0.15s ease;
+      flex: 0 0 auto;
     }
 
-    a.button.is-link {
-      background-color: #3273dc;
-      color: #fff;
+    .topbar .nav-link:hover {
+      background: var(--hover-bg);
     }
 
-    a.button.is-link:hover {
-      background-color: #276cda;
+    .topbar .icon-link {
+      padding: 0.2rem 0.4rem;
+      flex: 0 0 auto;
     }
 
-    .pdf-viewer {
-  margin-top: 2rem;
-  width: 100%;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.6);
-}
+    .topbar .icon-link i {
+      font-size: 1.05rem;
+    }
+
+    @media (max-width: 1023px) {
+      .topbar .nav-link {
+        font-size: 0.8rem;
+        padding: 0.18rem 0.4rem;
+      }
+
+      .topbar .icon-link i {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .topbar {
+        gap: 0.25rem 0.5rem;
+        justify-content: flex-start;
+        padding: 0.4rem 0.5rem;
+      }
+
+      .topbar .nav-link {
+        font-size: 0.78rem;
+      }
+
+      .topbar .icon-link {
+        padding: 0.15rem 0.3rem;
+      }
+    }
+
+    /*────────── CV SECTION ──────────*/
+    #cv {
+      padding-top: calc(var(--nav-height) + 2rem);
+    }
+
+    .pdf-fullscreen {
+      width: 100vw;
+      height: 90vh;
+      border: none;
+      display: block;
+      background-color: #1f1f1f;
+    }
+
+    .title {
+      text-align: center;
+      font-family: 'Google Sans', sans-serif;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 600px) {
+      .pdf-fullscreen {
+        height: 85vh;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <!--────────────────────  NAVBAR  ─────────────────────────-->
+  <!--────────── NAVBAR ──────────-->
   <nav class="topbar">
     <a class="brand" href="index.html">About</a>
     <a class="nav-link" href="papers.html">Papers</a>
     <a class="nav-link is-active" href="cv.html">CV</a>
     <a class="nav-link" href="news.html">News</a>
-
     <a class="icon-link" href="https://linkedin.com/in/adamdhines" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
     <a class="icon-link" href="https://github.com/adamdhines" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
     <a class="icon-link" href="https://scholar.google.com/citations?user=rH2jg5UAAAAJ&hl=en" target="_blank" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
     <a class="icon-link" href="https://orcid.org/0000-0002-0259-3642" target="_blank" aria-label="ORCiD"><i class="ai ai-orcid"></i></a>
   </nav>
 
-  <!--────────────────────  CV SECTION  ──────────────────────-->
+  <!--────────── CV SECTION ──────────-->
   <section id="cv">
-    <div class="container">
-      <h1 class="title is-2">Curriculum Vitae</h1>
-      <div class="pdf-viewer">
-        <iframe
-          src="./static/CV.pdf"
-          width="100%"
-          height="800px"
-          style="border: none; background-color: #1f1f1f;"
-        >
-          This browser does not support PDFs. Please download the PDF to view it:
-          <a href="./static/Adam_D_Hines_CV.pdf">Download PDF</a>.
-        </iframe>
-      </div>
-    </div>
+    <h1 class="title is-2">Curriculum Vitae</h1>
+    <iframe
+      class="pdf-fullscreen"
+      src="./static/CV.pdf"
+      title="Adam D Hines CV PDF"
+    >
+      This browser does not support PDFs. Please download the file instead:
+      <a href="./static/CV.pdf">Download CV</a>
+    </iframe>
   </section>
 
-  <!--────────────────────  FOOTER  ──────────────────────────-->
+  <!--────────── FOOTER ──────────-->
   <footer class="footer">
     <div class="content has-text-centered">
       <p><strong>Adam D Hines</strong> — <strong>Neuroscientist turned roboticist</strong></p>
