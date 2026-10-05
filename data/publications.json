@@ -1,0 +1,205 @@
+[
+  {
+    "id": "eventcv-paper",
+    "title": "The EventCV Library for Event-Based Robotic Vision",
+    "authors": "Adam D. Hines, Michael Milford, Tobias Fischer",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "Preprint",
+    "image": "/static/images/eventcv-paper.webp",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2609.21330",
+      "PDF": "https://arxiv.org/pdf/2609.21330",
+      "Code": "https://github.com/EventLAB-Team/eventcv",
+      "Project": "https://eventcv.net/"
+    },
+    "image_alt": "EventCV ecosystem diagram connecting event cameras, recordings, and simulation to a shared vision pipeline.",
+    "image_source": "https://arxiv.org/html/2609.21330v1#S1.F1"
+  },
+  {
+    "id": "megaevent",
+    "title": "Multi-viewpoint Geo-localization with Event Cameras",
+    "authors": "Adam D. Hines, Michael Milford, Tobias Fischer",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "Preprint",
+    "image": "/static/images/megaevent.webp",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2609.21219",
+      "PDF": "https://arxiv.org/pdf/2609.21219",
+      "Code": "https://github.com/AdamDHines/megaevent"
+    },
+    "image_alt": "MegaEvent overview contrasting fixed-track localisation with multi-city, multi-viewpoint place recognition.",
+    "image_source": "https://arxiv.org/html/2609.21219v1#S1.F1"
+  },
+  {
+    "id": "eventgem",
+    "title": "EventGeM: Global-to-Local Feature Matching for Event-Based Visual Place Recognition",
+    "authors": "Adam D. Hines, Gokul B. Nair, Nicolás Marticorena, Michael Milford, Tobias Fischer",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "Preprint",
+    "image": "/static/images/eventgem.webp",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2603.05807",
+      "PDF": "https://arxiv.org/pdf/2603.05807",
+      "DOI": "https://doi.org/10.48550/arXiv.2603.05807"
+    },
+    "image_alt": "EventGeM pipeline combining global feature retrieval and local feature matching.",
+    "image_source": "https://arxiv.org/html/2603.05807v2#S1.F1"
+  },
+  {
+    "id": "eventlab",
+    "title": "Event-LAB: Towards Standardized Evaluation of Neuromorphic Localization Methods",
+    "authors": "Adam D. Hines, Alejandro Fontan, Michael Milford, Tobias Fischer",
+    "year": 2026,
+    "venue": "IEEE International Conference on Robotics and Automation (ICRA)",
+    "status": "Accepted",
+    "image": "/static/images/eventlab.webp",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2509.14516",
+      "PDF": "https://arxiv.org/pdf/2509.14516",
+      "DOI": "https://doi.org/10.48550/arXiv.2509.14516"
+    },
+    "image_alt": "Event-LAB workflow from dataset preparation and frame generation to baseline evaluation.",
+    "image_source": "https://arxiv.org/html/2509.14516v2#S1.F1"
+  },
+  {
+    "id": "insect",
+    "title": "A neuromorphic model of the insect visual system for natural image processing",
+    "authors": "Adam D. Hines, Karin Nordström, Andrew B. Barron",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "Preprint",
+    "image": "/static/images/insect.webp",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2602.06405",
+      "PDF": "https://arxiv.org/pdf/2602.06405",
+      "DOI": "https://doi.org/10.48550/arXiv.2602.06405"
+    },
+    "image_alt": "Visual model activations and sparse Kenyon cell representations for flower images.",
+    "image_source": "https://arxiv.org/html/2602.06405v1#Sx3.F3"
+  },
+  {
+    "id": "honeybee",
+    "title": "Learning complex stimuli with a honey bee brain: contrasting consequences on performance and flight behaviour from degrading configural versus featural information",
+    "authors": "M. G. Guiraud, Adam D. Hines, M. Jin, Andrew B. Barron",
+    "year": 2026,
+    "venue": "Research Square",
+    "status": "Preprint",
+    "image": "",
+    "links": {
+      "DOI": "https://doi.org/10.21203/rs.3.rs-9487302/v1"
+    }
+  },
+  {
+    "id": "lens",
+    "title": "A compact neuromorphic system for ultra-energy-efficient, on-device robot localization",
+    "authors": "Adam D. Hines*, Michael Milford, Tobias Fischer",
+    "year": 2025,
+    "venue": "Science Robotics",
+    "status": "Published",
+    "image": "/static/images/lens.webp",
+    "links": {
+      "PDF": "/static/papers/LENS.pdf",
+      "Code": "https://github.com/AdamDHines/LENS",
+      "DOI": "https://doi.org/10.1126/scirobotics.ads3968"
+    }
+  },
+  {
+    "id": "threshold",
+    "title": "Threshold Adaptation in Spiking Networks Enables Shortest Path Finding and Place Disambiguation",
+    "authors": "Robin Dietrich*, Tobias Fischer, Nicolai Waniek, Nico Reeb, Michael Milford, Alois Knoll, Adam D. Hines",
+    "year": 2025,
+    "venue": "IEEE Neuro Inspired Computational Elements (NICE)",
+    "status": "Published",
+    "image": "/static/images/thresh.webp",
+    "links": {
+      "PDF": "/static/papers/thresh.pdf",
+      "Code": "https://github.com/dietriro/neuroseq",
+      "DOI": "https://doi.org/10.1109/NICE65350.2025.11065806"
+    }
+  },
+  {
+    "id": "pixi",
+    "title": "Pixi: Unified Software Development and Distribution for Robotics and AI",
+    "authors": "Tobias Fischer, Wolf Vollprecht, Bas Zalmstra, Ruben Arts, Tim de Jager, Alejandro Fontan, Adam D. Hines, Michael Milford, Silvio Traversaro, Daniel Claes, Scarlett Raine",
+    "year": 2025,
+    "venue": "arXiv",
+    "status": "Preprint",
+    "image": "/static/images/pixi.webp",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2511.04827",
+      "PDF": "https://arxiv.org/pdf/2511.04827",
+      "DOI": "https://doi.org/10.48550/arXiv.2511.04827"
+    },
+    "image_alt": "Comparison of package management approaches for scientific computing and robotics.",
+    "image_source": "https://arxiv.org/html/2511.04827v1#Sx1.F1"
+  },
+  {
+    "id": "synapses",
+    "title": "Synapse-specific trapping of SNARE machinery proteins in the anesthetized Drosophila brain",
+    "authors": "Adam D. Hines, Amber B. Kewin, Matthew N. Van De Poll, Victor Anggono, Adekunle T. Bademosi, Bruno van Swinderen*",
+    "year": 2024,
+    "venue": "The Journal of Neuroscience",
+    "status": "Published",
+    "image": "/static/images/iso.webp",
+    "links": {
+      "PDF": "/static/papers/jneuro.pdf",
+      "Code": "https://github.com/AdamDHines/sptPALM-Analysis",
+      "DOI": "https://doi.org/10.1523/JNEUROSCI.0588-23.2024"
+    }
+  },
+  {
+    "id": "vprtempo",
+    "title": "VPRTempo: A Fast Temporally Encoded Spiking Neural Network for Visual Place Recognition",
+    "authors": "Adam D. Hines, Peter G. Stratton, Michael Milford, Tobias Fischer",
+    "year": 2024,
+    "venue": "IEEE International Conference on Robotics and Automation (ICRA)",
+    "status": "Published",
+    "image": "/static/images/vprtempo.webp",
+    "links": {
+      "PDF": "/static/papers/vprtempo.pdf",
+      "Code": "https://github.com/QVPR/VPRTempo",
+      "DOI": "https://doi.org/10.1109/ICRA57147.2024.10610918"
+    }
+  },
+  {
+    "id": "tracking",
+    "title": "Tracking Single Molecule Dynamics in the Adult Drosophila Brain",
+    "authors": "Adam D. Hines, Bruno van Swinderen*",
+    "year": 2021,
+    "venue": "eNeuro",
+    "status": "Published",
+    "image": "/static/images/eneuro.webp",
+    "links": {
+      "PDF": "/static/papers/eneuro.pdf",
+      "Code": "https://github.com/AdamDHines/sptPALM-Analysis",
+      "DOI": "https://doi.org/10.1523/ENEURO.0057-21.2021"
+    }
+  },
+  {
+    "id": "cardiac",
+    "title": "Pharmacological activation of IKr in models of long QT Type 2 risks overcorrection of repolarization",
+    "authors": "Matthew D Perry*, Chai-Ann Ng, Melissa M Mangala, Timothy Y M Ng, Adam D Hines, Whitney Liang, Michelle J O Xu, Adam P Hill, Jamie I Vandenberg",
+    "year": 2020,
+    "venue": "Cardiovascular Research",
+    "status": "Published",
+    "image": "/static/images/cvr.webp",
+    "links": {
+      "DOI": "https://doi.org/10.1093/cvr/cvz247"
+    }
+  },
+  {
+    "id": "anaesthesia",
+    "title": "Turning to Drosophila for help in resolving general anesthesia",
+    "authors": "Bruno van Swinderen*, Adam D Hines",
+    "year": 2020,
+    "venue": "Proceedings of the National Academy of Sciences",
+    "status": "Published",
+    "image": "",
+    "links": {
+      "DOI": "https://doi.org/10.1073/pnas.2012131117"
+    }
+  }
+]

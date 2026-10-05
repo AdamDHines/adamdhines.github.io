@@ -1,0 +1,85 @@
+{
+  "updated": "2026-10-05",
+  "summary": "Roboticist specialising in event-based vision, robotic localisation, and open-source research software. Research Fellow at the QUT Centre for Robotics, working on vision-based positioning for Roo-ver, Australia’s first lunar rover. Developer of EventCV, with research spanning embedded neuromorphic localisation, event-based place recognition, and reproducible evaluation workflows.",
+  "appointments": [
+    {
+      "date": "2026–present",
+      "title": "Research Fellow",
+      "organisation": "QUT Centre for Robotics, Queensland University of Technology",
+      "detail": "Working with Associate Professor Thierry Peynot on vision-based positioning for Roo-ver, Australia’s first lunar rover, as part of the QUT team."
+    },
+    {
+      "date": "2024–2026",
+      "title": "Postdoctoral Research Fellow",
+      "organisation": "School of Natural Sciences, Macquarie University",
+      "detail": "Computational modelling and biorobotics with Professor Andrew Barron; concurrent Visiting Fellow at QUT."
+    },
+    {
+      "date": "2023–2024",
+      "title": "Research Fellow",
+      "organisation": "QUT Centre for Robotics, Queensland University of Technology",
+      "detail": "Neuromorphic localisation with Professor Michael Milford and Dr Tobias Fischer."
+    },
+    {
+      "date": "2022",
+      "title": "Visiting Associate Researcher / Fulbright Scholar",
+      "organisation": "University of Pennsylvania",
+      "detail": "Research with Professor Roderic Eckenhoff."
+    },
+    {
+      "date": "2017–2019",
+      "title": "Research Assistant",
+      "organisation": "Queensland Brain Institute, University of Queensland",
+      "detail": ""
+    }
+  ],
+  "education": [
+    {
+      "date": "2019–2023",
+      "title": "PhD in Neuroscience",
+      "organisation": "University of Queensland",
+      "detail": "Fulbright Future and Queensland Scholar."
+    },
+    {
+      "date": "2013–2016",
+      "title": "Bachelor of Medical Science (First Class Honours)",
+      "organisation": "University of New South Wales",
+      "detail": ""
+    }
+  ],
+  "teaching": [
+    "Primary supervisor for final-year engineering capstone students in QUT’s EGH4001/2 courses, including project direction, mentorship, and assessment.",
+    "Co-supervision of visiting PhD students, including work published at the IEEE Neuro Inspired Computational Elements conference.",
+    "Designed and delivered a programming workshop for Master of Neuroscience students at the University of Queensland; the workshop was renewed for a second year.",
+    "Completed Harvard Business School Online’s Leadership Principles course in 2024."
+  ],
+  "funding": [
+    "2026 — $10,000 QUT Centre for Robotics early-career researcher grant for an event-based data capture system, commencing June 2026.",
+    "2022 — Fulbright Future and Queensland Scholarship, with competitive funding totalling $25,000."
+  ],
+  "awards": [
+    "2025 — Nominated for the QUT Vice-Chancellor’s Award for Academic Excellence.",
+    "2022 — Fulbright Future and Queensland Scholarship.",
+    "2022 — Associate Faculty Member, H1 Connect.",
+    "2019–2023 — Young Science Ambassador outreach with Wonder of Science, recognised with a distinguished service award.",
+    "2019 — UQ Graduate School Scholarship.",
+    "2016–2021 — Student presentation prizes, including three-minute thesis and conference presentation awards."
+  ],
+  "service": [
+    "2026 — Associate Editor, IEEE/RSJ IROS Conference Paper Review Board.",
+    "2024–present — Steering committee member and co-chair roles, EMCR Brain Sciences Alliance.",
+    "2024–2025 — Flying Scientist, Office of the Chief Scientist of Queensland.",
+    "2024 — Organiser, Debates in Robotics Workshop at IEEE ICRA.",
+    "2020–2021 — Deputy chair and Queensland representative, Australasian Neuroscience Society Student Body Committee.",
+    "Peer review for Science Robotics, IEEE Transactions on Robotics, ICRA, ICCV, ECCV, IEEE Robotics and Automation Letters, PLoS ONE, and Anesthesiology."
+  ],
+  "communication": [
+    "Invited seminars and presentations at MIT, Harvard, ETH Zurich, the University of Pennsylvania, UNSW, Technical University of Munich, and TU Delft.",
+    "Research communication through the ABC, 2GB Radio, Australian Associated Press, and The Conversation.",
+    "STEM outreach with schools in regional and remote Queensland through Flying Scientist and Wonder of Science."
+  ],
+  "collaborations": [
+    "Research collaborations across QUT, Macquarie University, TU Delft, and Western Sydney University, including bilateral work through a Templeton World Charity Foundation Research Hub.",
+    "International research collaboration established during the Fulbright placement at the University of Pennsylvania."
+  ]
+}

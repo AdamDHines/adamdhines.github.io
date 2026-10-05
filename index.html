@@ -1,158 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Meta Description -->
-  <meta name="description" content="Official website of Dr Adam D Hines, computational neuroscientist and roboticist.">
-  <link rel="icon" type="image/png" href="./static/images/favicon.png">
-
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://adamdhines.github.io/">
-
-  <!-- Robots Meta Tag -->
-  <meta name="robots" content="index, follow">
-  <meta name="google-site-verification" content="4FxfVyL6UTuTgW_XYHHlLDI7P4y3i41wxtjFa8Fd5rs" />
-  <title>Home | Adam D Hines</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Bulma CSS (only used for hero/container conveniences) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <!-- Font Awesome & Academicons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-
-  <style>
-    /*────────────────────  COLOUR THEME  ────────────────────*/
-    :root {
-      --bg:          #121212;
-      --surface:     #1f1f1f;
-      --text:        #e0e0e0;
-      --hover-bg:    rgba(255,255,255,0.08);
-      --nav-height:  60px;            /* change if needed */
-    }
-
-    /*────────────────────  GLOBAL RESET  ───────────────────*/
-    *,*::before,*::after{box-sizing:border-box;}
-    html,body{margin:0;background:var(--bg);color:var(--text);}
-
-    a{color:inherit;text-decoration:none;}
-
-    /*────────────────────  TOPBAR NAV  ─────────────────────*/
-    .topbar{
-      position:fixed;top:0;left:0;right:0;z-index:100;
-      height:var(--nav-height);
-      background:var(--surface);
-      display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
-      gap:0.35rem 0.75rem;                /* row & column gaps */
-      padding:0.3rem 0.75rem;
-    }
-
-    .topbar .brand{
-      font-family:'Google Sans',sans-serif;font-weight:700;font-size:1rem;
-      padding:0.2rem 0.6rem;
-      white-space:nowrap;
-      flex:0 0 auto;                      /* don’t grow */
-    }
-
-    .topbar .nav-link{
-      font-family:'Google Sans',sans-serif;font-weight:700;font-size:0.9rem;
-      padding:0.2rem 0.45rem;
-      border-radius:4px;
-      transition:background 0.15s ease;
-      flex:0 0 auto;
-    }
-    .topbar .nav-link:hover{background:var(--hover-bg);}
-
-    .topbar .icon-link{padding:0.2rem 0.4rem;flex:0 0 auto;}
-    .topbar .icon-link i{font-size:1.05rem;}
-
-    /*────────────────────  HERO SECTION  ───────────────────*/
-    #home{min-height:calc(100vh - var(--nav-height));padding-top:var(--nav-height);
-          display:flex;align-items:center;justify-content:center;text-align:center;}
-    .title,.subtitle{color:var(--text);}  /* override Bulma’s */
-
-    /*─────────────────  SMALL-SCREEN TWEAKS  ───────────────*/
-    @media(max-width:1023px){
-      .topbar .nav-link{font-size:0.8rem;padding:0.18rem 0.4rem;}
-      .topbar .icon-link i{font-size:1rem;}
-    }
-
-    @media(max-width:600px){
-      /* allow links to wrap to multiple lines but keep icons small */
-      .topbar{gap:0.25rem 0.5rem;justify-content:flex-start;padding:0.4rem 0.5rem;}
-      .topbar .nav-link{font-size:0.78rem;}
-      .topbar .icon-link{padding:0.15rem 0.3rem;}
-    }
-
-    a {
-      color: #3273dc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <!--────────────────────  NAVBAR  ─────────────────────────-->
-  <nav class="topbar">
-    <a class="brand" href="index.html">About</a>
-
-    <!-- page links -->
-    <a class="nav-link" href="papers.html">Papers</a>
-    <a class="nav-link" href="cv.html">CV</a>
-    <a class="nav-link" href="news.html">News</a>
-
-    <!-- social icons -->
-    <a class="icon-link" href="https://linkedin.com/in/adamdhines" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-    <a class="icon-link" href="https://github.com/adamdhines" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-    <a class="icon-link" href="https://scholar.google.com/citations?user=rH2jg5UAAAAJ&hl=en" target="_blank" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-    <a class="icon-link" href="https://orcid.org/0000-0002-0259-3642" target="_blank" aria-label="ORCiD"><i class="ai ai-orcid"></i></a>
-  </nav>
-
-  <!--────────────────────  HERO  ───────────────────────────-->
-  <section id="home" class="hero">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title is-1" style="font-family:'Google Sans',sans-serif;">Dr Adam D Hines</h1>
-        <h2 class="subtitle is-4" style="font-family:'Noto Sans',sans-serif;">Postdoctoral Research Fellow</h2>
-        <div class="columns is-centered">
-          <div class="column is-narrow">
-            <figure class="image" style="max-width: 300px; margin: 0 auto;">
-              <img class="is-rounded" src="./static/images/profile.jpg" alt="Adam D Hines">
-            </figure>
-          </div>
-        </div>
-        <h3 class="subtitle is-5" style="font-family:'Noto Sans',sans-serif;">Macquarie University / Queensland University of Technology</h3>
-        <p class="subtitle is-6" style="font-family:'Noto Sans',sans-serif;">
-          <a href="mailto:adam.hines@mq.ed.au" style="color: #3273dc;">adam.hines@mq.ed.au</a> /
-          <a href="mailto:adam.hines@qut.edu.au" style="color: #3273dc;">adam.hines@qut.edu.au</a>
-        </p>
-        <p class="subtitle is-5" style="font-family:'Noto Sans',sans-serif;">I'm a Postdoctoral Research Fellow in Computational modelling and 
-          bio-robotics at the University of Macquarie, and a Visiting Fellow with the QUT Centre for Robotics. My research interest lies at the intersection of neuroscience and robotics with neuromorphic computing.
-        </p>
-        <p class="subtitle is-5" style="font-family:'Noto Sans',sans-serif;">
-          I graduated with a PhD in Neuroscience from the Queensland Brain Institute, University of Queensland in 2023 studying mechanisms of general anaesthesia. In 22', I was a 
-          Fulbright Future and the Queensland Scholar at the University of Pennsylvania, Phildaelphia. In 23', I made the switch to robotics engineering with the 
-          QUT Centre for Robotics where I developed neuromorphic localisation and mapping algorithms for autonomous robots.
-        </p> 
-        <p class="subtitle is-5" style="font-family:'Noto Sans',sans-serif;">
-          My current research focus is on developing models of honeybee action selection and active vision for autonomous robots.  
-        <p class="subtitle is-5" style="font-family:'Noto Sans',sans-serif;">
-          I'm also a passionate academic for STEMM outreach and advocacy as a Flying Scientist with the Office of Chief Scientist of Queensland and co-chair of the EMCR Brain Sciences Network. 
-        </p>
-      </div>
+<html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adam Hines | Robotics &amp; Event-Based Vision</title><meta name="description" content="Adam Hines is a QUT roboticist working on vision-based positioning for Roo-ver, Australia’s first lunar rover, event-based vision, and open-source tools."><link rel="canonical" href="https://adamdhines.github.io/">
+<meta name="robots" content="index, follow"><meta name="google-site-verification" content="4FxfVyL6UTuTgW_XYHHlLDI7P4y3i41wxtjFa8Fd5rs">
+<meta name="theme-color" content="#f7f6f0"><link rel="icon" type="image/png" href="/static/images/favicon.png">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Adam Hines"><meta property="og:title" content="Adam Hines | Robotics &amp; Event-Based Vision"><meta property="og:description" content="Adam Hines is a QUT roboticist working on vision-based positioning for Roo-ver, Australia’s first lunar rover, event-based vision, and open-source tools."><meta property="og:url" content="https://adamdhines.github.io/"><meta property="og:image" content="https://adamdhines.github.io/static/images/social.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Adam Hines — Robotics and event-based vision">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Adam Hines | Robotics &amp; Event-Based Vision"><meta name="twitter:description" content="Adam Hines is a QUT roboticist working on vision-based positioning for Roo-ver, Australia’s first lunar rover, event-based vision, and open-source tools."><meta name="twitter:image" content="https://adamdhines.github.io/static/images/social.jpg">
+<link rel="preload" href="/static/fonts/source-sans-3-regular.ttf" as="font" type="font/ttf" crossorigin><link rel="stylesheet" href="/static/css/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://adamdhines.github.io/#website", "url": "https://adamdhines.github.io/", "name": "Adam Hines", "alternateName": "Adam D Hines"}, {"@type": "ProfilePage", "@id": "https://adamdhines.github.io/#profile", "url": "https://adamdhines.github.io/", "name": "Adam Hines | Robotics & Event-Based Vision", "dateModified": "2026-10-05", "mainEntity": {"@id": "https://adamdhines.github.io/#adam-hines"}}, {"@type": "Person", "@id": "https://adamdhines.github.io/#adam-hines", "name": "Adam Hines", "alternateName": ["Adam D Hines", "Dr Adam D Hines"], "url": "https://adamdhines.github.io/", "image": "https://adamdhines.github.io/static/images/portrait.webp", "jobTitle": "Research Fellow", "worksFor": {"@type": "Organization", "name": "Queensland University of Technology", "url": "https://www.qut.edu.au/"}, "knowsAbout": ["Robotics", "Event-based vision", "Robotic localisation", "Open-source software"], "sameAs": ["https://scholar.google.com/citations?user=rH2jg5UAAAAJ&hl=en", "https://github.com/adamdhines", "https://www.linkedin.com/in/adamdhines/", "https://orcid.org/0000-0002-0259-3642"]}]}</script></head>
+<body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><nav class="nav wrap" aria-label="Main navigation"><a class="brand" href="/" aria-label="Adam Hines — home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>Adam Hines<span aria-hidden="true">.</span></a><div class="nav-links"><a href="/" aria-current="page">About</a><a href="/papers.html">Publications</a><a href="/cv.html">CV</a><a href="/news.html">News</a></div></nav></header>
+<main id="main"><section class="hero home-intro wrap" aria-labelledby="intro-heading">
+  <div>
+    <p class="eyebrow">Robotics &amp; event-based vision</p>
+    <h1 id="intro-heading">Adam Hines.</h1>
+    <p class="intro">I’m a Research Fellow at the QUT Centre for Robotics, working on vision-based positioning for <strong><a href="https://roover.com.au/">Roo-ver, Australia’s first lunar rover</a></strong>. My research focuses on event-based vision, robotic localisation, and open-source tools.</p>
+    <p class="intro background">Based in Brisbane, Australia. Previously at Macquarie University and a Fulbright Scholar at the University of Pennsylvania.</p>
+    <div class="actions">
+      <a class="button" href="/papers.html">Publications <span aria-hidden="true">→</span></a>
+      <a class="text-link" href="/cv.html">CV &amp; experience →</a>
     </div>
-  </section>
-
-  <!--────────────────────  FOOTER  ──────────────────────────-->
-  <footer class="footer">
-    <div class="content has-text-centered">
-      <p><strong>Adam D Hines</strong> — <strong>Neuroscientiest turned roboticist</strong></p>
-    </div>
-  </footer>
-</body>
-</html>
+  </div>
+  <figure class="portrait"><img src="/static/images/portrait.webp" width="900" height="925" alt="Dr Adam D Hines holding a hexapod robot in a garden" fetchpriority="high"></figure>
+</section>
+<section class="section selected home-work wrap" aria-labelledby="work-heading">
+  <div class="section-head"><h2 id="work-heading">Selected work</h2></div>
+  <ul class="work-list"><li id="eventcv"><a class="work-image" href="https://eventcv.net/" tabindex="-1" aria-hidden="true"><img src="/static/images/eventcv-paper.webp" width="200" height="150" alt="" loading="lazy"></a><div><h3><a href="https://eventcv.net/">EventCV <span aria-hidden="true">↗</span></a></h3><p>Open-source Python and Rust tools for event-based computer vision.</p></div></li><li id="megaevent"><a class="work-image" href="/papers.html#megaevent" tabindex="-1" aria-hidden="true"><img src="/static/images/megaevent.webp" width="200" height="150" alt="" loading="lazy"></a><div><h3><a href="/papers.html#megaevent">MegaEvent <span aria-hidden="true">↗</span></a></h3><p>Multi-viewpoint place recognition with event cameras.</p></div></li><li id="eventgem"><a class="work-image" href="/papers.html#eventgem" tabindex="-1" aria-hidden="true"><img src="/static/images/eventgem.webp" width="200" height="150" alt="" loading="lazy"></a><div><h3><a href="/papers.html#eventgem">EventGeM <span aria-hidden="true">↗</span></a></h3><p>Global-to-local feature matching for event-based place recognition.</p></div></li><li id="lens"><a class="work-image" href="/papers.html#lens" tabindex="-1" aria-hidden="true"><img src="/static/images/lens.webp" width="200" height="150" alt="" loading="lazy"></a><div><h3><a href="/papers.html#lens">LENS <span aria-hidden="true">↗</span></a></h3><p>Energy-efficient robot localisation on embedded neuromorphic hardware.</p></div></li></ul>
+</section>
+<section class="section news-preview home-news wrap" aria-labelledby="news-heading">
+  <div class="section-head"><h2 id="news-heading">Recent updates</h2><a class="text-link" href="/news.html">All news →</a></div>
+  <ul class="news-preview-list"><li><span class="date">September 2026</span><div><p>EventCV 1.0.8 released — continuing development of open-source tools for event-based computer vision.</p><a href="https://eventcv.net/">Explore EventCV ↗</a></div></li><li><span class="date">September 2026</span><div><p>Updated our EventGeM preprint on global-to-local feature matching for event-based visual place recognition.</p><a href="https://arxiv.org/abs/2603.05807">Read the preprint ↗</a></div></li></ul>
+</section>
+</main>
+<footer class="site-footer"><div class="wrap"><div class="footer-top"><div><h2>Let’s talk vision.</h2><a href="mailto:adam.hines@qut.edu.au">adam.hines@qut.edu.au</a></div><nav class="footer-socials" aria-label="Professional profiles"><a href="https://scholar.google.com/citations?user=rH2jg5UAAAAJ&amp;hl=en">Google Scholar</a><a href="https://github.com/adamdhines">GitHub</a><a href="https://www.linkedin.com/in/adamdhines/">LinkedIn</a><a href="https://orcid.org/0000-0002-0259-3642">ORCID</a></nav></div><div class="footer-bottom"><span>© 2026 Adam D Hines</span><span>Robotics &amp; event-based vision · Brisbane, Australia</span></div></div></footer></body></html>

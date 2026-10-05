@@ -1,0 +1,314 @@
+[
+  {
+    "year": 2026,
+    "month": "September",
+    "date": "2026-09-20",
+    "text": "EventCV 1.0.8 released — continuing development of open-source tools for event-based computer vision.",
+    "url": "https://eventcv.net/",
+    "link_label": "Explore EventCV"
+  },
+  {
+    "year": 2026,
+    "month": "September",
+    "date": "2026-09-18",
+    "text": "Updated our EventGeM preprint on global-to-local feature matching for event-based visual place recognition.",
+    "url": "https://arxiv.org/abs/2603.05807",
+    "link_label": "Read the preprint"
+  },
+  {
+    "year": 2026,
+    "month": "June",
+    "text": "Received a $10,000 QUT Centre for Robotics early-career researcher grant to develop an event-based data capture system."
+  },
+  {
+    "year": 2026,
+    "month": "March",
+    "text": "Shared an updated Event-LAB paper, accepted to ICRA 2026, providing a common framework for evaluating neuromorphic localisation methods.",
+    "url": "https://arxiv.org/abs/2509.14516",
+    "link_label": "Read the paper"
+  },
+  {
+    "year": 2026,
+    "month": "March",
+    "date": "2026-03-06",
+    "text": "Released EventGeM, our preprint on event-based visual place recognition.",
+    "url": "https://arxiv.org/abs/2603.05807",
+    "link_label": "Read the preprint"
+  },
+  {
+    "year": 2026,
+    "month": "February",
+    "date": "2026-02-06",
+    "text": "Released our preprint on a neuromorphic model of the insect visual system for natural image processing.",
+    "url": "https://arxiv.org/abs/2602.06405",
+    "link_label": "Read the preprint"
+  },
+  {
+    "year": 2026,
+    "month": "",
+    "text": "Started as a Research Fellow at the QUT Centre for Robotics, working with Associate Professor Thierry Peynot."
+  },
+  {
+    "year": 2026,
+    "month": "",
+    "text": "Appointed Associate Editor on the IEEE/RSJ IROS Conference Paper Review Board."
+  },
+  {
+    "year": 2025,
+    "month": "November",
+    "date": "2025-11-06",
+    "text": "Co-authored the Pixi preprint on unified software development and distribution for robotics and AI.",
+    "url": "https://arxiv.org/abs/2511.04827",
+    "link_label": "Read the preprint"
+  },
+  {
+    "year": 2025,
+    "month": "September",
+    "date": "2025-09-18",
+    "text": "Released the Event-LAB preprint on standardised evaluation of neuromorphic localisation methods.",
+    "url": "https://arxiv.org/abs/2509.14516",
+    "link_label": "Read the preprint"
+  },
+  {
+    "year": 2025,
+    "month": "July",
+    "text": "Proceedings for the 2025 NICE conference (Robin's paper) were published"
+  },
+  {
+    "year": 2025,
+    "month": "June",
+    "text": "I gave an interview for the West Gippsland Week 3BBR show about our Science Robotics work"
+  },
+  {
+    "year": 2025,
+    "month": "June",
+    "text": "I gave an interview for 2GB about our Science Robotics work"
+  },
+  {
+    "year": 2025,
+    "month": "June",
+    "text": "The Australian Associated Press, Science News, The Engineer covered our Science Robotics article"
+  },
+  {
+    "year": 2025,
+    "month": "June",
+    "text": "A piece we wrote for The Conversation was published"
+  },
+  {
+    "year": 2025,
+    "month": "June",
+    "text": "Our LENS research was published in Science Robotics: an embedded neuromorphic system for energy-efficient robot localisation.",
+    "url": "https://www.linkedin.com/posts/adamdhines_sciencerobotics-neuroscience-robotics-activity-7341238307390935040-2596",
+    "link_label": "Read the announcement"
+  },
+  {
+    "year": 2025,
+    "month": "May",
+    "text": "Visited Townsville and Charters Towers through the Flying Scientist program for the World Science Festival"
+  },
+  {
+    "year": 2025,
+    "month": "April",
+    "text": "Got married!"
+  },
+  {
+    "year": 2025,
+    "month": "April",
+    "text": "Attended the transitions team retreat in Kioloa, NSW with Macquarie, ANU, & Cambridge"
+  },
+  {
+    "year": 2025,
+    "month": "March",
+    "text": "Robin's work was accepted to the IEEE Neuro Inspired Computational Elements conference, co-supervised by Tobias Fischer"
+  },
+  {
+    "year": 2025,
+    "month": "February",
+    "text": "Presented at the QUT The Future of Neuromorphic and Bio-Inspired Computation event"
+  },
+  {
+    "year": 2025,
+    "month": "January",
+    "text": "Started as co-chair of the EMCR Brain Sciences Network for a one year term"
+  },
+  {
+    "year": 2024,
+    "month": "September",
+    "text": "Visited Roma State College for a Flying Scientist event"
+  },
+  {
+    "year": 2024,
+    "month": "September",
+    "text": "Joined Macquarie University as a postdoctoral research fellow"
+  },
+  {
+    "year": 2024,
+    "month": "August",
+    "text": "Visited Macquarie University to meet and attend a special lecture from Prof. Barbara Webb"
+  },
+  {
+    "year": 2024,
+    "month": "August",
+    "text": "Submitted our LENS neuromorphic localization system preprint and published it to arXiv"
+  },
+  {
+    "year": 2024,
+    "month": "June",
+    "text": "Our J.Neuro paper was featured by the journal as one of the most discussed articles for May based on Altmetric >180"
+  },
+  {
+    "year": 2024,
+    "month": "May",
+    "text": "Gave an interview for the ABC on our anaesthetic mechanisms paper"
+  },
+  {
+    "year": 2024,
+    "month": "May",
+    "text": "A piece I wrote for The Conversation on our anaesthesia paper was published"
+  },
+  {
+    "year": 2024,
+    "month": "May",
+    "text": "Served as an organiser for the 2024 IEEE ICRA Debates in Robotics workshop"
+  },
+  {
+    "year": 2024,
+    "month": "May",
+    "text": "Attended and presented VPRTempo at the 2024 IEEE International Conference on Robotics and Automation in Yokohama, Japan"
+  },
+  {
+    "year": 2024,
+    "month": "May",
+    "text": "Our general anaesthetic mechanism paper was accepted and published in The Journal of Neuroscience"
+  },
+  {
+    "year": 2024,
+    "month": "May",
+    "text": "Poster presentation accepted to the 2024 IEEE ICRA workshop on \"Bio-inspired robotics and robotics for biology\""
+  },
+  {
+    "year": 2024,
+    "month": "April",
+    "text": "Presented about neuromorphic localisation and computing at the QUT School of EER Research+You event"
+  },
+  {
+    "year": 2024,
+    "month": "February",
+    "text": "Completed the Harvard Business School Online Leadership Principles course"
+  },
+  {
+    "year": 2024,
+    "month": "February",
+    "text": "Provided an expert insight to New Scientist on an article about AI and the mouse brain"
+  },
+  {
+    "year": 2024,
+    "month": "January",
+    "text": "Our VPRTempo paper was accepted to the 2024 IEEE International Conference on Robotics and Automation"
+  },
+  {
+    "year": 2024,
+    "month": "January",
+    "text": "Joined the EMCR Brain Sciences Network as a steering committee member"
+  },
+  {
+    "year": 2023,
+    "month": "December",
+    "text": "Attended my PhD graduation at UQ"
+  },
+  {
+    "year": 2023,
+    "month": "August",
+    "text": "Gave a seminar \"Neuronal synapses: from biology to bits\" at the QUT Centre for Robotics weekly seminar series"
+  },
+  {
+    "year": 2023,
+    "month": "August",
+    "text": "Submitted our VPRTempo paper and published it to arXiv"
+  },
+  {
+    "year": 2023,
+    "month": "July",
+    "text": "Successfully defended and had my PhD conferred!"
+  },
+  {
+    "year": 2023,
+    "month": "May",
+    "text": "Participated in a Fulbright panel for researchers interested in the program at Neura in NSW"
+  },
+  {
+    "year": 2023,
+    "month": "May",
+    "text": "Started as a Research Fellow with the QUT Centre for Robotics"
+  },
+  {
+    "year": 2023,
+    "month": "March",
+    "text": "Submitted our anaesthetic mechanism paper and published it to bioRxiv"
+  },
+  {
+    "year": 2023,
+    "month": "March",
+    "text": "Submitted my PhD thesis for examination"
+  },
+  {
+    "year": 2023,
+    "month": "January",
+    "text": "Passed my final PhD milestone examination"
+  },
+  {
+    "year": 2022,
+    "month": "December",
+    "text": "Returned home from my Fulbright after 5.5 months in Philadelphia, PA"
+  },
+  {
+    "year": 2022,
+    "month": "November",
+    "text": "Visited and presented a seminar at Weill Cornell in NYC"
+  },
+  {
+    "year": 2022,
+    "month": "November",
+    "text": "Visited and presented a seminar at Harvard/MGH and MIT in Boston, MA"
+  },
+  {
+    "year": 2022,
+    "month": "October",
+    "text": "Delivered an online seminar at the University of Pittsburgh Research Rounds"
+  },
+  {
+    "year": 2022,
+    "month": "October",
+    "text": "Invited and attended the Liszt Piano Competition at Carnegie Hall, NYC from the One to World organisation"
+  },
+  {
+    "year": 2022,
+    "month": "September",
+    "text": "Visited and presented a seminar at the Fall Seminar Series at Rutgers in NJ"
+  },
+  {
+    "year": 2022,
+    "month": "August",
+    "text": "Joined H1 Connect as an Associate Faculty, alongside Prof. Roderic Eckenhoff"
+  },
+  {
+    "year": 2022,
+    "month": "July",
+    "text": "Officially started my Fulbright program at the University of Pennsylvania in Philadelphia, PA"
+  },
+  {
+    "year": 2022,
+    "month": "May",
+    "text": "Visited Far North Queensland for an 8 school tour through the Wonder of Science program and Business Liaison Association of Cairns promoting STEMM"
+  },
+  {
+    "year": 2022,
+    "month": "May",
+    "text": "Delivered an online seminar (at 2am!) for the Research in Progress seminar series at the University of Pennsylvania"
+  },
+  {
+    "year": 2022,
+    "month": "February",
+    "text": "Attended the Fulbright Orientation in Canberra"
+  }
+]
